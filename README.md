@@ -1,2 +1,3 @@
-# learn-DOM
-learn dom
+# Learn DOM
+
+Learn DOM

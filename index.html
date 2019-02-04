@@ -4,20 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>LEARN DOM</title>
+    <title>Learn DOM</title>
   </head>
   <body>
-    <header id="header"></header>
-    <h1>Dino Task</h1>
+    <header id="header">
+      <h1>Dino Task</h1>
+    </header>
+
     <div>
-  <form id="form" onsubmit= "dinoTask.addTask()">
-    <input type="text"  id='input-text' placeholder="insert here"> </input>
-    <input type="submit" id="input-add" value= "click here"> </input>
-  </form>
-  <ul id='textlist'>
-    
-  </ul>
-</div>
-<script src="index.js"></script>
-</body>
+      <form id="form" onsubmit="dinoTask.addTask()">
+        <input
+          type="text"
+          id="input-text"
+          placeholder="Insert your task here"
+        />
+        <input type="submit" id="input-add" value="Add Task" />
+      </form>
+      <ul id="text-list"></ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>

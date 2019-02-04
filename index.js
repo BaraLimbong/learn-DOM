@@ -1,14 +1,14 @@
 let tasks = ['running', 'reading']
 
-const tasklistDOM = document.getElementById('textlist')
-window.onload = function() {}
+const tasklistDOM = document.getElementById('text-list')
+
 const dinoTask = {
-  displaytask: function() {
+  displayTasks: function() {
     tasklistDOM.innerHTML = ''
     tasks.forEach(task => {
       const liDOM = document.createElement('li')
-      const textlist = document.createTextNode(task)
-      liDOM.appendChild(textlist)
+      const textList = document.createTextNode(task)
+      liDOM.appendChild(textList)
       tasklistDOM.appendChild(liDOM)
     })
   },
@@ -18,13 +18,14 @@ const dinoTask = {
     const submitText = document.getElementById('input-text').value
     if (submitText !== '') {
       tasks.push(submitText)
-      dinoTask.displaytask()
+      dinoTask.displayTasks()
       document.getElementById('input-text').value = ''
     }
   },
+
   deleteTask: function() {
-    event.preventDefault()
-    const deleteTask = document.createElement('delete')
+    console.log('delete task')
   }
 }
-dinoTask.displaytask()
+
+dinoTask.displayTasks()
